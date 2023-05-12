@@ -4,25 +4,25 @@ import { Config as config } from "../config";
 import { Rest } from "./Rest";
 
 export interface NodeStats {
-  players: number;
-  playingPlayers: number;
+  players?: number;
+  playingPlayers?: number;
   memory: {
-    reservable: number;
-    used: number;
-    free: number;
-    allocated: number;
+    reservable?: number;
+    used?: number;
+    free?: number;
+    allocated?: number;
   };
   frameStats: {
-    sent: number;
-    deficit: number;
-    nulled: number;
+    sent?: number;
+    deficit?: number;
+    nulled?: number;
   };
   cpu: {
-    cores: number;
-    systemLoad: number;
-    lavalinkLoad: number;
+    cores?: number;
+    systemLoad?: number;
+    lavalinkLoad?: number;
   };
-  uptime: number;
+  uptime?: number;
 }
 
 export class Node {
